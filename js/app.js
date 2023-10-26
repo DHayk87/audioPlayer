@@ -7,7 +7,6 @@ const volume_bar = document.querySelector(".volume-bar");
 const volume_back = document.querySelector(".volume-back");
 let audio = new Audio("../audio/take_five.mp3");
 
-
 function playSong(audio) {
     audio.play();
 }
@@ -55,5 +54,5 @@ volume.addEventListener("click", () => {
 volume_back.addEventListener("click", (e) => {
     volume_bar.style.width = e.target.clientWidth - e.offsetX + "px";
     audio.volume = (e.target.clientWidth - e.offsetX) / 100;
-    console.log(audio.volume)
+    console.log(audio.volume);
 });
