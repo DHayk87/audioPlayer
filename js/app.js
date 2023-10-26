@@ -5,7 +5,7 @@ const playBtn = document.querySelector(".play-pause");
 const volume = document.querySelector(".volume");
 const volume_bar = document.querySelector(".volume-bar");
 const volume_back = document.querySelector(".volume-back");
-let audio = new Audio("../audio/take_five.mp3");
+let audio = new Audio("/audio/take_five.mp3");
 
 function playSong(audio) {
     audio.play();
