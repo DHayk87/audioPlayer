@@ -17,7 +17,7 @@ function stopSong(audio) {
 playBtn.addEventListener("click", () => {
     let timer = null;
     if (playBtn.src.includes("play")) {
-        playBtn.src = "./image/svg/pause-fill.svg";
+        playBtn.src = "/image/svg/pause-fill.svg";
         if (audio.duration < 60) {
             duration.textContent = "0." + parseInt(audio.duration);
         } else {
